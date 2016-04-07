@@ -1,0 +1,40 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.e-stat.go.jp/rest/2.0/app/json/getStatsList?appId=<APP_ID>&openYears=2016&searchKind=3&statsCode=00200502&statsNameList=Y
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Apr 2016 00:34:40 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '332'
+      Set-Cookie:
+      - gapp8090=R2232538466; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"GET_STATS_LIST":{"RESULT":{"STATUS":0,"ERROR_MSG":"\u6B63\u5E38\u306B\u7D42\u4E86\u3057\u307E\u3057\u305F\u3002","DATE":"2016-04-06T09:34:40.895+09:00"},"PARAMETER":{"LANG":"J","OPEN_YEARS":2016,"STATS_CODE":"00200502","SEARCH_KIND":3,"STATS_NAME_LIST":"Y","DATA_FORMAT":"J"},"DATALIST_INF":{"NUMBER":1,"RESULT_INF":{"FROM_NUMBER":1,"TO_NUMBER":1},"LIST_INF":{"@id":"00200502","STAT_NAME":{"@code":"00200502","$":"\u793E\u4F1A\u30FB\u4EBA\u53E3\u7D71\u8A08\u4F53\u7CFB"},"GOV_ORG":{"@code":"00200","$":"\u7DCF\u52D9\u7701"}}}}}'
+    http_version: 
+  recorded_at: Wed, 06 Apr 2016 00:34:40 GMT
+recorded_with: VCR 3.0.1

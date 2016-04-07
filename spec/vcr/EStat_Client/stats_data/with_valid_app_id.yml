@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.e-stat.go.jp/rest/2.0/app/json/getStatsData?appId=<APP_ID>&limit=10&statsDataId=0003014522
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json; charset=utf-8
+      User-Agent:
+      - Faraday v0.9.2
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 06 Apr 2016 00:49:19 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Type:
+      - application/json;charset=utf-8
+      Vary:
+      - Accept-Encoding
+      Content-Length:
+      - '1520'
+      Set-Cookie:
+      - gapp8090=R3864248928; path=/
+    body:
+      encoding: ASCII-8BIT
+      string: '{"GET_STATS_DATA":{"RESULT":{"STATUS":0,"ERROR_MSG":"\u6B63\u5E38\u306B\u7D42\u4E86\u3057\u307E\u3057\u305F\u3002","DATE":"2016-04-06T09:49:19.394+09:00"},"PARAMETER":{"LANG":"J","STATS_DATA_ID":"0003014522","DATA_FORMAT":"J","START_POSITION":1,"LIMIT":10,"METAGET_FLG":"Y"},"STATISTICAL_DATA":{"RESULT_INF":{"TOTAL_NUMBER":3456,"FROM_NUMBER":1,"TO_NUMBER":10,"NEXT_KEY":11},"TABLE_INF":{"@id":"0003014522","STAT_NAME":{"@code":"00550020","$":"\u5546\u696D\u7D71\u8A08\u8ABF\u67FB"},"GOV_ORG":{"@code":"00550","$":"\u7D4C\u6E08\u7523\u696D\u7701"},"STATISTICS_NAME":"\u5546\u696D\u7D71\u8A08\u8ABF\u67FB
+        \u7D71\u8A08\u8868\u4E00\u89A7 \u5E73\u621019\u5E74\u5546\u696D\u7D71\u8A08
+        \u4E8C\u6B21\u52A0\u5DE5\u7D71\u8A08\u8868","TITLE":{"@no":"13-12","$":"\u696D\u614B\u5225\u7D71\u8A08\u7DE8\uFF08\u5C0F\u58F2\u696D\uFF09
+        \u30B3\u30F3\u30D3\u30CB\u30A8\u30F3\u30B9\u30B9\u30C8\u30A2\u306E\u533A\u90E8\u30FB\u5E02\u90E8\u30FB\u90E1\u90E8\u5225\u3001\u58F2\u5834\u9762\u7A4D\u898F\u6A21\u5225\u3001\u5F93\u696D\u8005\u898F\u6A21\u5225\u3001\u55B6\u696D\u6642\u9593\u5225\u306E\u4E8B\u696D\u6240\u6570\u3001\u5F93\u696D\u8005\u6570\u53CA\u3073\u5E74\u9593\u5546\u54C1\u8CA9\u58F2\u984D"},"CYCLE":"-","SURVEY_DATE":"200701-200712","OPEN_DATE":"2010-03-22","SMALL_AREA":0,"MAIN_CATEGORY":{"@code":"06","$":"\u5546\u696D\u30FB\u30B5\u30FC\u30D3\u30B9\u696D"},"SUB_CATEGORY":{"@code":"01","$":"\u5546\u696D"},"OVERALL_TOTAL_NUMBER":3456,"UPDATED_DATE":"2010-03-19"},"CLASS_INF":{"CLASS_OBJ":[{"@id":"cat01","@name":"\u4E8C\u6B21\u52A0\u5DE5\u7D71\u8A08\u30FB\u96C6\u8A08\u9805\u76EE","CLASS":[{"@code":"020000000","@name":"\u4E8B\u696D\u6240\u6570","@level":"1"},{"@code":"030020000","@name":"\u5F93\u696D\u8005\u6570\u3000(\u4EBA)","@level":"2","@parentCode":"030000000"},{"@code":"040000000","@name":"\u5E74\u9593\u5546\u54C1\u8CA9\u58F2\u984D\u3000(\u767E\u4E07\u5186)","@level":"1"}]},{"@id":"cat02","@name":"\u55B6\u696D\u6642\u9593\u968E\u7D1A","CLASS":[{"@code":"010000000","@name":"\u8A08","@level":"1"},{"@code":"010050010","@name":"14\u6642\u9593\u4EE5\u4E0A\uFF5E16\u6642\u9593\u672A\u6E80","@level":"3","@parentCode":"010050000"},{"@code":"010050020","@name":"16\u6642\u9593\u4EE5\u4E0A\uFF5E18\u6642\u9593\u672A\u6E80","@level":"3","@parentCode":"010050000"},{"@code":"010050030","@name":"18\u6642\u9593\u4EE5\u4E0A\uFF5E20\u6642\u9593\u672A\u6E80","@level":"3","@parentCode":"010050000"},{"@code":"010050040","@name":"20\u6642\u9593\u4EE5\u4E0A\uFF5E24\u6642\u9593\u672A\u6E80","@level":"3","@parentCode":"010050000"},{"@code":"010060000","@name":"\u7D42\u65E5\u55B6\u696D","@level":"2","@parentCode":"010000000"}]},{"@id":"cat03","@name":"\u5F93\u696D\u8005\u898F\u6A21","CLASS":[{"@code":"040010000","@name":"\u8A08","@level":"2","@parentCode":"040000000"},{"@code":"040010010","@name":"2\u4EBA\u4EE5\u4E0B","@level":"3","@parentCode":"040010000"},{"@code":"040010020","@name":"3\uFF5E4\u4EBA","@level":"3","@parentCode":"040010000"},{"@code":"040010030","@name":"5\uFF5E9\u4EBA","@level":"3","@parentCode":"040010000"},{"@code":"040010040","@name":"10\uFF5E14\u4EBA","@level":"4","@parentCode":"040010035"},{"@code":"040010050","@name":"15\uFF5E19\u4EBA","@level":"4","@parentCode":"040010035"},{"@code":"040010060","@name":"20\uFF5E24\u4EBA","@level":"3","@parentCode":"040010000"},{"@code":"040010070","@name":"25\u4EBA\u4EE5\u4E0A","@level":"3","@parentCode":"040010000"}]},{"@id":"cat04","@name":"\u58F2\u5834\u9762\u7A4D\u898F\u6A21","CLASS":[{"@code":"020010000","@name":"\u8A08
+        \uFF08\u5E73\u65B9\u30E1\u30FC\u30C8\u30EB\uFF09","@level":"2","@parentCode":"020000000"},{"@code":"020010010","@name":"
+        30\u4EE5\u4E0A\uFF5E 50\u672A\u6E80","@level":"3","@parentCode":"020010000"},{"@code":"020010020","@name":"
+        50\u4EE5\u4E0A\uFF5E100\u672A\u6E80","@level":"3","@parentCode":"020010000"},{"@code":"020010030","@name":"100\u4EE5\u4E0A\uFF5E150\u672A\u6E80","@level":"3","@parentCode":"020010000"},{"@code":"020010040","@name":"150\u4EE5\u4E0A\uFF5E200\u672A\u6E80","@level":"3","@parentCode":"020010000"},{"@code":"020010050","@name":"200\u4EE5\u4E0A\uFF5E250\u672A\u6E80","@level":"3","@parentCode":"020010000"}]},{"@id":"cat05","@name":"\u533A\u90E8\u30FB\u5E02\u90E8\u30FB\u90E1\u90E8","CLASS":[{"@code":"010000000","@name":"\u5168\u56FD","@level":"1"},{"@code":"010010000","@name":"\u3000\u533A\u90E8","@level":"2","@parentCode":"010000000"},{"@code":"010020000","@name":"\u3000\u5E02\u90E8","@level":"2","@parentCode":"010000000"},{"@code":"010030000","@name":"\u3000\u90E1\u90E8","@level":"2","@parentCode":"010000000"}]}]},"DATA_INF":{"NOTE":[{"@char":"-","$":"\u7686\u7121\u307E\u305F\u306F\u5B9A\u7FA9\u4E0A\u8A72\u5F53\u6570\u5B57\u304C\u306A\u3044\u3082\u306E"},{"@char":"X","$":"\u6570\u5024\u304C\u79D8\u533F\u3055\u308C\u3066\u3044\u308B\u3082\u306E"}],"VALUE":[{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010000","@cat05":"010000000","$":"43684"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010000","@cat05":"010010000","$":"13089"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010000","@cat05":"010020000","$":"26218"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010000","@cat05":"010030000","$":"4377"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010010","@cat05":"010000000","$":"2050"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010010","@cat05":"010010000","$":"785"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010010","@cat05":"010020000","$":"1097"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010010","@cat05":"010030000","$":"168"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010020","@cat05":"010000000","$":"9818"},{"@cat01":"020000000","@cat02":"010000000","@cat03":"040010000","@cat04":"020010020","@cat05":"010010000","$":"3752"}]}}}}'
+    http_version: 
+  recorded_at: Wed, 06 Apr 2016 00:49:19 GMT
+recorded_with: VCR 3.0.1
