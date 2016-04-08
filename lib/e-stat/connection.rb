@@ -7,7 +7,7 @@ module EStat
 
     def connection
       options = {
-        :headers => { 'Accept': 'application/json; charset=utf-8' },
+        :headers => { Accept: 'application/json; charset=utf-8' },
         :url => endpoint,
       }
 
