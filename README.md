@@ -1,6 +1,13 @@
 # EStat
 
-A Ruby wrapper for the e-Stat API
+[![Gem Version](https://badge.fury.io/rb/e-stat.svg)](https://badge.fury.io/rb/e-stat)
+ [![Build Status](https://travis-ci.org/yshimada0330/e-stat.svg?branch=master)](https://travis-ci.org/yshimada0330/e-stat)
+
+
+A Ruby wrapper for the [e-Stat API](http://www.e-stat.go.jp/api/)
+
+## Supported versions
+* Ruby 2.2.x
 
 ## Installation
 
@@ -39,7 +46,7 @@ list = client.stats_list(openYears: '2016', statsCode: '00200502', searchKind: '
 stats = client.stats_data(statsDataId: list['GET_STATS_LIST']['DATALIST_INF']['TABLE_INF'][0]['@id'])
 ```
 
-## Test
+## Testing
 
 ```
 $ export APP_ID=YOUR_APP_ID

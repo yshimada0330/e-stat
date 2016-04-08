@@ -1,4 +1,9 @@
 language: ruby
 rvm:
+  - 2.1.0
   - 2.2.3
 before_install: gem install bundler -v 1.11.2
+script:  bundle exec rspec
+env:
+  global:
+    - secure: q9XjXPGlGgBwb5llsdIeOSKr5FhFLpbV9FkUKpQW9n6Y6gfV0Ra0q2gbhgI3Qxa2Z7Je2uYLPbJyoFI42EfUX3P9J7+bf09SCTZqhuKL7YTjlkW5RH3KG5+5SKjQrwTRngxGV7qhEyUSqm0Fna96qzhsB97C3hKprxhDTKt3hkvofDQFJ91ZNv14SDc94VpLEOyyd+Eit1gRsh90ZBJahTAScPdaz31eJbP0/QC6/fdRG+vMK+xlDQBVFJwaYYkuRU/1UUxnYCVO1eBSHlg0UkJEQVBToVsmtFtndDKYTWzQSB6QAfhgGUFL5X+qAS+LMoaKF+C99Ih781MY9F+w6CN+Ljr5KIN/otf/MQlO+BuzgTwhTkE8wFJDIN2bsstEUUnzCTl5XFlGyoar72B3lU1qtwb0PyeLrw3QqMPU1VsdG+Txayqko4/IIOnxffSQ6sWdEr+9nmN7tlsSPrmqPasKS/yuNr82ei1ihfy4fScutZogOw/ASKdJCbLhFz+BIPqDdXQOXAa7DU6Bxla4GKH4HwvL77Wq8whkXbkvvQaSzM/M08fYA6sHXvKZzJnIM8Ref7xaXqOjIzRfe7ssrTVpl7I9vwPJgeA4Z3hNcpb2Gna+8fwk3OBqf5JW5HUMLG728Y2kUSMKgOHTLc6f3lxjmjadnN8adFzEei6AaT0=
